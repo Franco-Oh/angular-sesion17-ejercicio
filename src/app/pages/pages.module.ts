@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { RouterModule } from '@angular/router';
+import { MisionComponent } from './mision/mision.component';
+import { VisionComponent } from './vision/vision.component';
 
 
 
@@ -10,10 +13,18 @@ import { ContactoComponent } from './contacto/contacto.component';
   declarations: [
     HomeComponent,
     NosotrosComponent,
-    ContactoComponent
+    ContactoComponent,
+    MisionComponent,
+    VisionComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
+  ],
+  exports: [
+    HomeComponent,
+    NosotrosComponent,
+    ContactoComponent
   ]
 })
 export class PagesModule { }
